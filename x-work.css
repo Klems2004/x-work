@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: grotesque;
+  src: url(font/BricolageGrotesque-VariableFont_opsz\wdth\wght.ttf);
+}
+li {
+  text-decoration: none;
+}
+body {
+  font-family: grotesque;
+}
+p {
+  font-weight: normal;
+}
+.container {
+  margin: 0 13rem;
+  padding: 1.2rem 0;
+}
+
+/* ======================= SITE CONTENT ======================== */
+
+.header-area {
+  padding: 1.5rem 0;
+  display: flex;
+  gap: 400px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: transparent;
+  top: 20px;
+  left: 0;
+  z-index: 10;
+}
+.logo-area img {
+  width: 30px;
+}
+.header-right {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links li a {
+  list-style: none;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+.btn {
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: bold;
+  color: rgb(250, 235, 217);
+  border: 1px solid rgb(20, 20, 20);
+  font-size: 16px;
+}
+
+/* ==================== HERO-SECTION =====================*/
+.hero-section {
+  background: url(./x-work\ image/mixed.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.hero-area {
+  display: flex;
+  padding-top: 120px;
+}
+
+.hero-words p {
+  font-size: 19px;
+  font-weight: 20px;
+  color: white;
+}
+.hero-words h3 {
+  font-size: 90px;
+  color: white;
+  font-family: grotesque;
+}
+
+.hero-btn {
+  padding: 15px 20px;
+  margin: 10px;
+  color: rgb(38, 24, 51);
+  background-color: rgb(241, 241, 194);
+  border-radius: 20px;
+  font-size: 15px;
+  border: 0px;
+}
+.hero-foot img {
+  width: 40px;
+  text-align: center;
+}
+.hero-foot {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.hero-foot p {
+  font-size: 25px;
+  color: white;
+}
+
+/* =======================MEDIA QURY ================================ */
+@media all and (max-width: 600px) {
+  .container {
+    margin: 1rem;
+  }
+  section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .hero-section {
+    flex-direction: row;
+  }
+  .hero-area {
+    flex-direction: column;
+  }
+  .hero-btn {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+  .hero-img img {
+    width: 200px;
+    margin-top: 10px;
+  }
+  .hero-img {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-words h3 {
+    font-size: 50px;
+  }
+  .hero-word p {
+    line-height: 40px;
+  }
+}
